@@ -1,4 +1,5 @@
 import React from "react";
+import { AnimateMenu } from "./hambuger-button";
 
 const NavHero = () => {
   const navigation = [
@@ -32,6 +33,7 @@ const NavHero = () => {
   ];
   return (
     <div className="w-full h-full py-2 border-b-[1px] border-slate-300 bg-[url('/images/bg2.jpeg')]">
+      <AnimateMenu />
       <nav className=" w-full bg-transparent  hidden md:flex space-x-5 justify-center ">
         <div className=" text-3xl font-bold cursor-pointer text-red-600 p-1">
           HOME
