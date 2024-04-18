@@ -60,8 +60,8 @@ const Card = ({ card
         }}
         className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
       ></div>
-      <div className="absolute inset-0 z-10 grid place-content-center">
-        <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white backdrop-blur-lg">
+      <div className="absolute z-10  grid place-content-center w-full bottom-1">
+        <p className="  bg-gradient-to-br from-zinc-900 via-blue-900 to-white  p-8 text-xl text-black font-semibold italic uppercase font-serif  backdrop-blur-sm">
           {card.title}
         </p>
       </div>
@@ -73,38 +73,50 @@ export default ScrollCarousel ;
 
 const cards = [
   {
-    url: "/imgs/abstract/1.jpg",
-    title: "Title 1",
+    url: "images/gazebo/4.jpg",
+    title: "GAZEBO",
     id: 1,
   },
   {
-    url: "/imgs/abstract/2.jpg",
-    title: "Title 2",
+    url: "/images/aframebanner/2.jpg",
+    title: "A-Frame banner",
     id: 2,
   },
   {
-    url: "/imgs/abstract/3.jpg",
-    title: "Title 3",
+    url: "/images/bannerwall/3.jpg",
+    title: "BANNER WALL",
     id: 3,
   },
   {
-    url: "/imgs/abstract/4.jpg",
-    title: "Title 4",
+    url: "/images/beanbag/4.jpg",
+    title: "BEAN BAG",
     id: 4,
   },
   {
-    url: "/imgs/abstract/5.jpg",
-    title: "Title 5",
+    url: "/images/brandedchairs/5.png",
+    title: "BRANDED CHAIRS",
     id: 5,
   },
   {
-    url: "/imgs/abstract/6.jpg",
-    title: "Title 6",
+    url: "/images/ottoman/3.jpg",
+    title: "OTTOMAN",
     id: 6,
   },
   {
-    url: "/imgs/abstract/7.jpg",
-    title: "Title 7",
+    url: "/images/corporateflag/1.jpg",
+    title: "Corporate flag",
     id: 7,
   },
+  {
+    url: "/images/parasol/2.jpg",
+    title: "PARASOL",
+    id: 8,
+  },
+  {
+    url: "/images/tablecloath/2.jpg",
+    title: "TABLE CLOATH",
+    id: 9,
+  },
+  
+
 ];
