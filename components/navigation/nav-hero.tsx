@@ -1,39 +1,40 @@
-import React from "react";
-import { AnimateMenu } from "./hambuger-button";
+import React, { useState } from "react";
+import { MobileNav } from "./mobile-nav";
+export  const navigation = [
+  {
+    id: 4,
+    label: "Gallery",
+    path: "/gallery",
+  },
+
+  {
+    id: 2,
+    label: "About",
+    path: "/about",
+  },
+  {
+    id: 3,
+    label: "Branding",
+    path: "/branding",
+  },
+
+  {
+    id: 5,
+    label: "Blog",
+    path: "/blog",
+  },
+  {
+    id: 6,
+    label: "Contact",
+    path: "/contact",
+  },
+];
 
 const NavHero = () => {
-  const navigation = [
-    {
-      id: 4,
-      label: "Gallery",
-      path: "/gallery",
-    },
-
-    {
-      id: 2,
-      label: "About",
-      path: "/about",
-    },
-    {
-      id: 3,
-      label: "Branding",
-      path: "/branding",
-    },
-
-    {
-      id: 5,
-      label: "Blog",
-      path: "/blog",
-    },
-    {
-      id: 6,
-      label: "Contact",
-      path: "/contact",
-    },
-  ];
+ 
   return (
     <div className="w-full h-full py-2 border-b-[1px] border-slate-300 bg-[url('/images/bg2.jpeg')]">
-      <AnimateMenu />
+  <MobileNav />
       <nav className=" w-full bg-transparent  hidden md:flex space-x-5 justify-center ">
         <div className=" text-3xl font-bold cursor-pointer text-red-600 p-1">
           HOME
