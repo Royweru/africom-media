@@ -2,7 +2,7 @@ import React from 'react'
 
 const BrandingPage = () => {
   return (
-    <div>BrandingPage</div>
+    <div className=' w-full h-screen'>BrandingPage</div>
   )
 }
 

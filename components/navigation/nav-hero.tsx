@@ -36,9 +36,12 @@ const NavHero = () => {
     <div className="w-full h-full py-2 border-b-[1px] border-slate-300 bg-[url('/images/bg2.jpeg')]">
   <MobileNav />
       <nav className=" w-full bg-transparent  hidden md:flex space-x-5 justify-center ">
+        <a href="/">
         <div className=" text-3xl font-bold cursor-pointer text-red-600 p-1">
           HOME
         </div>
+        </a>
+       
         {navigation.map((nav) => (
           <a href={nav.path} key={nav.id}>
             <div className=" text-white  p-1 font-semibold font-sans text-2xl cursor-pointer hover:text-3xl rounded-md ">
