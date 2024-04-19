@@ -1,63 +1,174 @@
-"use client"
+"use client";
 
 import React, { useState } from "react";
 import { MobileNav } from "./mobile-nav";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { NavLogo } from "./nav-logo";
-export  const navigation = [
+
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+import { ArrowBigDown, ArrowDown } from "lucide-react";
+import { DropdownMenuArrow } from "@radix-ui/react-dropdown-menu";
+
+
+export const navigation = [
   {
     id: 4,
-    label: "Gallery",
+    label: "GALLERY",
     path: "/gallery",
   },
 
   {
     id: 2,
-    label: "About",
+    label: "ABOUT",
     path: "/about",
-  },
-  {
-    id: 3,
-    label: "Branding",
-    path: "/branding",
   },
 
   {
     id: 5,
-    label: "Blog",
+    label: "BLOG",
     path: "/blog",
   },
   {
     id: 6,
-    label: "Contact",
+    label: "CONTACT",
     path: "/contact",
   },
-  
-  
+];
+const brandingItems = [
+  {
+    id: 1,
+    label: "aframebanner",
+    path: "/products-category/branding/aframebanner",
+  },
+  {
+    id: 2,
+    label: "banner wall",
+    path: "/products-category/branding/bannerwall",
+  },
+  {
+    id: 3,
+    label: "bean bag",
+    path: "/products-category/branding/beanbag",
+  },
+  {
+    id: 4,
+    label: "branded chairs",
+    path: "/products-category/branding/brandedchairs",
+  },
+  {
+    id: 5,
+    label: "corporate flag",
+    path: "/products-category/branding/corporateflag",
+  },
+  {
+    id: 6,
+    label: "fence wrap",
+    path: "/products-category/branding/fencewrap",
+  },
+  {
+    id: 7,
+    label: "ottoman",
+    path: "/products-category/branding/",
+  },
+  {
+    id: 7,
+    label: "Harp banner",
+    path: "/products-category/branding/harpbanner",
+  },
+  {
+    id: 7,
+    label: "Parasol",
+    path: "/products-category/branding/parasol",
+  },
+  {
+    id: 8,
+    label: "Pull up banner",
+    path: "/products-category/branding/pullupbanner",
+  },
+  {
+    id: 8,
+    label: "Table cloath",
+    path: "/products-category/branding/tablecloath",
+  },
+  {
+    id: 9,
+    label: "Telescopic banner",
+    path: "/products-category/branding/telescopicbanner",
+  },
+  {
+    id: 10,
+    label: "Wind cheat banner",
+    path: "/products-category/branding/windcheatbanner",
+  },
 ];
 
 const NavHero = () => {
+  const pathName = usePathname();
 
-  const pathName = usePathname()
- 
   return (
-    <div className="w-full h-full py-2 border-b-[1px] border-slate-300 
-    bg-[url('/images/bgnav.jpg')] bg-center bg-cover rounded-b-lg m-2 flex justify-evenly items-center">
+    <div
+      className="w-full h-full py-2 border-b-[1px] border-slate-300 
+    bg-[url('/images/bgnav.jpg')] bg-center bg-cover rounded-b-lg m-2 flex justify-evenly items-center"
+    >
       <NavLogo />
-  <MobileNav />
+      <MobileNav />
       <nav className=" w-full bg-transparent  hidden md:flex space-x-5 justify-center ">
         <a href="/">
-        <div className=" text-3xl font-bold cursor-pointer text-red-600 p-1 italic">
-          HOME
-        </div>
+          <div className=" text-3xl font-bold cursor-pointer text-red-600 p-1 italic">
+            HOME
+          </div>
         </a>
-       
+        <DropdownMenu>
+  <DropdownMenuTrigger>
+    <div
+    className="
+    text-gray-800
+    p-1 
+    font-semibold
+     font-serif
+     text-2xl
+      cursor-pointer
+       rounded-md flex justify-between items-center
+       "
+    >
+      BRANDING
+     <ArrowDown className=" h-5 w-5" />
+    </div>
+  </DropdownMenuTrigger>
+  <DropdownMenuContent>
+   
+ 
+            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+              {brandingItems.map((brand) => (
+                <a href={brand.path} key={brand.id}>
+                <DropdownMenuItem  className=" text-white font-semibold font-serif text-2xl" >
+                  {brand.label}
+                </DropdownMenuItem>
+                </a>
+              ))}
+            </ul>
+         
+  </DropdownMenuContent>
+</DropdownMenu>
+
+    
+
         {navigation.map((nav) => (
           <a href={nav.path} key={nav.id}>
-            <div className={ cn(" text-sky-600  p-1 font-semibold font-sans text-2xl cursor-pointer hover:text-3xl rounded-md ",
-              nav.path===pathName&&"txt-3xl font-bold text-emerald-900"
-            )}>
+            <div
+              className={cn(
+                "  text-gray-800  p-1 font-semibold font-sans text-2xl cursor-pointer hover:text-3xl rounded-md ",
+                nav.path === pathName && "txt-3xl font-bold text-emerald-900"
+              )}
+            >
               {nav.label}
             </div>
           </a>
