@@ -76,35 +76,35 @@ const brandingItems = [
   {
     id: 7,
     label: "ottoman",
-    path: "/products-category/branding/",
+    path: "/products-category/branding/ottoman",
   },
   {
-    id: 7,
+    id: 8,
     label: "Harp banner",
     path: "/products-category/branding/harpbanner",
   },
   {
-    id: 7,
+    id: 9,
     label: "Parasol",
     path: "/products-category/branding/parasol",
   },
   {
-    id: 8,
+    id: 10,
     label: "Pull up banner",
     path: "/products-category/branding/pullupbanner",
   },
   {
-    id: 8,
+    id: 11,
     label: "Table cloath",
     path: "/products-category/branding/tablecloath",
   },
   {
-    id: 9,
+    id: 12,
     label: "Telescopic banner",
     path: "/products-category/branding/telescopicbanner",
   },
   {
-    id: 10,
+    id: 13,
     label: "Wind cheat banner",
     path: "/products-category/branding/windcheatbanner",
   },
@@ -116,7 +116,7 @@ const NavHero = () => {
   return (
     <div
       className="w-full h-full py-2 border-b-[1px] border-slate-300 
-    bg-[url('/images/bgnav.jpg')] bg-center bg-cover rounded-b-lg m-2 flex justify-evenly items-center"
+    bg-[url('/images/bgnav.jpg')] bg-center md:justify-evenly bg-cover md:px-0 px-6 rounded-b-lg m-2 flex justify-between items-center"
     >
       <NavLogo />
       <MobileNav />
@@ -158,9 +158,6 @@ const NavHero = () => {
          
   </DropdownMenuContent>
 </DropdownMenu>
-
-    
-
         {navigation.map((nav) => (
           <a href={nav.path} key={nav.id}>
             <div

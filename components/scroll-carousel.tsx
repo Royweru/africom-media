@@ -1,9 +1,17 @@
-"use client"
+"use client";
 
 import { motion, useTransform, useScroll } from "framer-motion";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const ScrollCarousel = () => {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+  if (!isMounted) {
+    return null;
+  }
   return (
     <div className="bg-neutral-800">
       <div className="flex h-4 items-center justify-center">
@@ -42,11 +50,7 @@ const HorizontalScrollCarousel = () => {
   );
 };
 
-const Card = ({ card
-
-} :{
-    card:any
-}) => {
+const Card = ({ card }: { card: any }) => {
   return (
     <div
       key={card.id}
@@ -69,7 +73,7 @@ const Card = ({ card
   );
 };
 
-export default ScrollCarousel ;
+export default ScrollCarousel;
 
 const cards = [
   {
@@ -117,6 +121,4 @@ const cards = [
     title: "TABLE CLOATH",
     id: 9,
   },
-  
-
 ];

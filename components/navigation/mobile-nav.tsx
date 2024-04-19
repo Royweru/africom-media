@@ -20,9 +20,9 @@ export const MobileNav = () => {
           <Button
             variant="ghost"
             size="icon"
-            className=" md:hidden block"
+            className=" md:hidden block hover:text-white"
           >
-            <Menu className=" w-7 h-7 text-white font-bold " />
+            <Menu className=" w-7 h-7  text-zinc-800 font-bold " />
           </Button>
         </SheetTrigger>
         <SheetContent className=" bg-zinc-900">

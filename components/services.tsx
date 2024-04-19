@@ -20,7 +20,10 @@ export const servicesDescription = [
   },
 ];
 export const Services = () => {
+  const [isMounted, setIsMounted] = useState(false);
   const [heading, setHeading] = useState("");
+ 
+
   useEffect(() => {
     // Real-time text writing simulation
     const originalText = "The reason as to why you should choose us";
@@ -35,6 +38,13 @@ export const Services = () => {
 
     return () => clearInterval(interval); // Cleanup on unmount
   }, []);
+  
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+  if (!isMounted) {
+    return null;
+  }
   return (
     <div className=" w-full py-5 flex flex-col gap-y-3 bg-slate-50">
       <h1 className=" text-3xl font-bold italic text-cyan-700 text-center">
