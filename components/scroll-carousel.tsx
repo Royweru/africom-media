@@ -61,7 +61,7 @@ const Card = ({ card
         className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
       ></div>
       <div className="absolute z-10  grid place-content-center w-full bottom-1">
-        <p className="  bg-gradient-to-br from-zinc-900 via-blue-900 to-white  p-8 text-xl text-black font-semibold italic uppercase font-serif  backdrop-blur-sm">
+        <p className="  bg-transparent  p-8 text-xl text-black font-semibold italic uppercase font-serif  backdrop-blur-sm">
           {card.title}
         </p>
       </div>

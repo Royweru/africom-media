@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { MobileNav } from "./mobile-nav";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { NavLogo } from "./nav-logo";
 export  const navigation = [
   {
     id: 4,
@@ -42,7 +43,8 @@ const NavHero = () => {
  
   return (
     <div className="w-full h-full py-2 border-b-[1px] border-slate-300 
-    bg-[url('/images/bgnav.jpg')] bg-center bg-cover rounded-b-lg m-2">
+    bg-[url('/images/bgnav.jpg')] bg-center bg-cover rounded-b-lg m-2 flex justify-evenly items-center">
+      <NavLogo />
   <MobileNav />
       <nav className=" w-full bg-transparent  hidden md:flex space-x-5 justify-center ">
         <a href="/">
