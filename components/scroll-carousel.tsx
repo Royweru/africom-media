@@ -104,7 +104,7 @@ const cards = [
   },
   {
     url: "/images/corporateflag/1.jpg",
-    title: "Corporate flag",
+    title: "CORPORATE FLAG",
     id: 7,
   },
   {
