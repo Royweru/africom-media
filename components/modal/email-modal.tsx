@@ -7,9 +7,9 @@ export const EmailModal = () => {
   const { isOpen, onClose } = useModalStore();
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className=" bg-zinc-200 p-2">
+      <DialogContent className="   bg-zinc-700">
         <DialogHeader>
-          <DialogTitle className=" font-semibold txt-lg bg-sky-300">Make your order, email us!</DialogTitle>
+          <DialogTitle className=" font-semibold txt-lg text-sky-300">Make your order, email us!</DialogTitle>
         </DialogHeader>
         <div className=" text-emerald-600 font-semibold p-2 flex flex-col items-center w-full">
           <div className="relative max-w-xs">

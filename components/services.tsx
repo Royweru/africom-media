@@ -46,11 +46,11 @@ export const Services = () => {
     return null;
   }
   return (
-    <div className=" w-full py-5 flex flex-col gap-y-3 bg-slate-50">
+    <div className=" w-full py-5 flex flex-col gap-y-3">
       <h1 className=" text-3xl font-bold italic text-cyan-700 text-center">
         {heading}
       </h1>
-      <div className=" w-full py-3 grid md:grid-cols-3 grid-cols-2 xl:grid-cols-3 px-12 gap-4">
+      <div className=" w-full py-3 grid md:grid-cols-3  xl:grid-cols-3 px-12 gap-4">
         {servicesDescription.map((service) => (
           <div className=" flex flex-col gap-y-2 " key={service.title}>
             <SpecialBox imgSrc={service.img} />

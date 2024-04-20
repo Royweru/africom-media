@@ -33,7 +33,7 @@ export const CTA = () => {
               </span>
             </p>
             <div className="items-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
-              <Button onClick={onOpen} variant="secondary" >
+              <Button onClick={onOpen} variant="secondary" className=" bg-gradient-to-br from-sky-200 via-blue-200 to-black text-neutral-200" >
                 Get started
               </Button>
             </div>
