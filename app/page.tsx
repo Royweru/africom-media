@@ -1,4 +1,5 @@
 
+import { CTA } from "@/components/cta";
 import ScrollCarousel from "@/components/scroll-carousel";
 import { Services } from "@/components/services";
 import VideoHero from "@/components/video-hero";
@@ -10,6 +11,7 @@ export default function Home() {
         <VideoHero />
         <ScrollCarousel />
         <Services />
+        <CTA />
     </main>
   );
 }
