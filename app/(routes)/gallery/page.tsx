@@ -1,5 +1,5 @@
 import React from "react";
-import { productsDetails } from "../products-category/branding/[slug]/page";
+import { productsDetails } from "@/data";
 import { GalleryArt } from "./components/gallery-art";
 
 const GalleryPage = () => {
