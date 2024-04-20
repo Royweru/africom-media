@@ -1,4 +1,6 @@
 import React from "react";
+import { productsDetails } from "../products-category/branding/[slug]/page";
+import { GalleryArt } from "./components/gallery-art";
 
 const GalleryPage = () => {
   return (
@@ -20,8 +22,12 @@ const GalleryPage = () => {
           </h1>
         </div>
       </div>
-
-
+       <div className=" w-full">
+       {productsDetails.map((product)=>(
+        <GalleryArt key={product.id} data={product} />
+       ))}
+       </div>
+     
       
     </div>
   );
