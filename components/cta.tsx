@@ -31,7 +31,7 @@ export const CTA = () => {
             </p>
             <div className="items-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
               <a
-                href="javascript:void(0)"
+                
                 className="block py-2 px-4 text-center text-white font-medium bg-indigo-600 duration-150 hover:bg-indigo-500 active:bg-indigo-700 rounded-lg shadow-lg hover:shadow-none"
               >
                 Let&#39;s get started
