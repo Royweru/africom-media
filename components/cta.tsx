@@ -1,9 +1,12 @@
 "use client";
+import { useModalStore } from "@/hooks/modal-store";
 import Image from "next/image";
 import { useState } from "react";
+import { Button } from "./ui/button";
 
 export const CTA = () => {
   const [state, setState] = useState(false);
+  const{onOpen} = useModalStore()
 
   // Replace javascript:void(0) path with your path
   const navigation = [
@@ -30,12 +33,9 @@ export const CTA = () => {
               </span>
             </p>
             <div className="items-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
-              <a
-                
-                className="block py-2 px-4 text-center text-white font-medium bg-indigo-600 duration-150 hover:bg-indigo-500 active:bg-indigo-700 rounded-lg shadow-lg hover:shadow-none"
-              >
-                Let&#39;s get started
-              </a>
+              <Button onClick={onOpen} variant="secondary" >
+                Get started
+              </Button>
             </div>
           </div>
           <div className="flex-none mt-14 md:mt-0 md:max-w-xl">

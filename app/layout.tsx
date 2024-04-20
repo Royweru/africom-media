@@ -4,6 +4,7 @@ import "./globals.css";
 import NavHero from "@/components/navigation/nav-hero";
 import { ThemeProvider } from "@/components/theme-provider"
 import { Footer } from "@/components/footer/footer";
+import { ModalProvider } from "@/components/providers/modal-provider";
 
 const font = BioRhyme({ subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default function RootLayout({
           
           
           >
+             <ModalProvider />
              <NavHero />
             {children}
             <Footer />
