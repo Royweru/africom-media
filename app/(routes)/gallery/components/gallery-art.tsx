@@ -9,7 +9,7 @@ export const GalleryArt = ({data}:GalleryArtProps) => {
   return (
     <div className=' flex flex-col gap-y-2 w-full h-full'>
         <GallleryHeader title={data.name} sub={data.description} />
-        <ImagesDisplay />
+        <ImagesDisplay images={data.images} />
     </div>
   )
 }
