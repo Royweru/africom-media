@@ -137,11 +137,11 @@ export const productsDetails:{id:number,name:string,description:string,images:st
     },
     {
       id:13,
-      name:"windcheatbanner",
+      name:"windcheaterbanner",
      description:"Fibre glass pole, steel ground spike andcarry bag. Optional indoor base. Singl or double-sided print. Light weight and easy to store",
      images:[
-      "/images/windcheatbanner/1.jpg",
-      "/images/windcheatbanner/2.jpg"
+      "/images/windcheaterbanner/1.jpg",
+      "/images/windcheaterbanner/2.jpg"
      ]
     },
   ]

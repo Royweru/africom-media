@@ -105,8 +105,8 @@ const brandingItems = [
   },
   {
     id: 13,
-    label: "Wind cheat banner",
-    path: "/products-category/branding/windcheatbanner",
+    label: "Wind cheater banner",
+    path: "/products-category/branding/windcheaterbanner",
   },
 ];
 
