@@ -53,7 +53,7 @@ export const Footer= () => {
                   <ul className="flex items-center space-x-4">
                       <li className="w-10 h-10 border rounded-full flex items-center justify-center">
                           <a href="javascript:void()" >
-                             <FacebookIcon />
+                           
                           </a>
                       </li>
 
