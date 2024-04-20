@@ -6,15 +6,15 @@ import Image from 'next/image'
 export const BrandDisplay = ({
     src
 }:BrandDisplayProps) => {
-    const imagesCount=[1,2,3,4,5]
+    const imagesCount=[1,2,3]
   return (
-    <div className=' w-full py-16 px-6 grid grid-cols-2 gap-1'>
+    <div className=' w-full py-12 px-4  flex flex-wrap gap-4'>
         {imagesCount.map((no:number)=>(
-              <div className=' col-span-1 h-[400px] relative' key={no}>
+              <div className=' w-[250px] h-[400px] relative' key={no}>
                   <Image
                     src={`/images/${src}/${no}.jpg`||`/images/${src}/${no}.png`||""}
                     alt=''
-                   className=' bg-cover bg-center'
+                   className=' bg-cover bg-center rounded-xl'
                     fill
                     />
               </div>
