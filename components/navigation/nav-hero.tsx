@@ -31,11 +31,7 @@ export const navigation = [
     path: "/about",
   },
 
-  {
-    id: 5,
-    label: "BLOG",
-    path: "/blog",
-  },
+ 
   {
     id: 6,
     label: "CONTACT",
