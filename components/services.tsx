@@ -59,7 +59,7 @@ export const Services = () => {
             </h2>
             <hr />
 
-            <blockquote className=" font-semibold text-sm tracking-wide  font-mono text-zinc-600">
+            <blockquote className=" font-semibold text-sm tracking-wider font-mono text-white">
               {service.desc}
             </blockquote>
           </div>

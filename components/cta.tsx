@@ -52,11 +52,11 @@ export const CTA = () => {
             Trusted by the best companies
           </p>
           <div className="flex justify-center items-center flex-wrap gap-x-12 gap-y-6 mt-6">
-            <div className=" w-[150px] h-[150px] rounded relative">
+            <div className=" w-[150px] h-[100px] rounded relative">
               <Image
                 src={"/images/partners/safcom.jpeg"}
                 alt=""
-                className=" bg-center bg-cover rounded-lg"
+                className=" bg-center bg-cover rounded-2xl"
                 fill
               />
             </div>
