@@ -10,7 +10,7 @@ const ContactPage = () => {
   })
   return (
     <div className="min-h-screen w-full 
-    bg-slate-100 
+     bg-[url('/images/bgcontact.jpg')] 
     gap-y-6 bg-cover bg-center p-6 backdrop-blur-md grid
       md:grid-cols-2 gap-4
     ">

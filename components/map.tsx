@@ -28,7 +28,7 @@ const Map = () => {
     center={center as L.LatLngExpression}
     zoom={13}
     scrollWheelZoom={false}
-    style={{ width: '100%', height: '500px' }}
+    style={{ width: '100%', height: '500px',borderRadius:"25px" }}
    >
      <TileLayer
       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
