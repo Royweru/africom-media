@@ -158,7 +158,7 @@ const NavHero = () => {
           <a href={nav.path} key={nav.id}>
             <div
               className={cn(
-                "  text-gray-800  p-1 font-semibold font-sans text-2xl cursor-pointer hover:text-3xl rounded-md ",
+                "  text-gray-800 font-serif  tracking-wide p-1 font-semibold text-2xl cursor-pointer hover:text-3xl rounded-md ",
                 nav.path === pathName && "txt-3xl font-bold text-emerald-900"
               )}
             >
