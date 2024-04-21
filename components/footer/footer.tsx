@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import { ContactForm } from './contact-form'
-import { FacebookIcon } from 'lucide-react'
+import {FaFacebook, FaInstagram, FaLinkedin, FaTwitter} from "react-icons/fa"
 
 export const Footer= () => {
   const date = new Date().getFullYear()
@@ -12,15 +12,15 @@ export const Footer= () => {
           name: 'About'
       },
       {
-          href: '/blog',
-          name: 'Blog'
+          href: '/contact',
+          name: 'Contact'
       },
       {
           href: 'javascript:void()',
           name: 'Team'
       },
       {
-          href: 'javascript:void()',
+          href: '/gallery',
           name: 'Gallery'
       }
   ]
@@ -52,26 +52,26 @@ export const Footer= () => {
               <div className="mt-6 sm:mt-0 text-black">
                   <ul className="flex items-center space-x-4">
                       <li className="w-10 h-10 border rounded-full flex items-center justify-center">
-                          <a href="javascript:void()" >
-                           
+                          <a href="" >
+                           <FaFacebook className=' w-5 h-5'/>
                           </a>
                       </li>
 
                       <li className="w-10 h-10 border rounded-full flex items-center justify-center">
-                          <a href="javascript:void()">
-                             
+                          <a href="">
+                             <FaTwitter className=' w-5 h-5'/>
                           </a>
                       </li>
 
                       <li className="w-10 h-10 border rounded-full flex items-center justify-center">
-                          <a href="javascript:void()">
-                           
+                          <a href="">
+                            <FaLinkedin className=' w-5 h-5' />
                           </a>
                       </li>
 
                       <li className="w-10 h-10 border rounded-full flex items-center justify-center">
-                          <a href="javascript:void()">
-                            
+                          <a href="">
+                            <FaInstagram className=' w-5 h-5' />
                           </a>
                       </li>
                   </ul>

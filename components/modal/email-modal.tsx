@@ -58,7 +58,7 @@ export const EmailModal = () => {
           </DialogTitle>
         </DialogHeader>
         <div className=" text-sky-300 gap-y-6 font-semibold p-2 flex flex-col items-center w-full">
-          <form action="" className="p-2 flex flex-col items-center w-full gap-y-6">
+          <form action="" className=" flex flex-col items-center w-full gap-y-6">
           <div className=" relative w-full">
             <input
               value={name}
