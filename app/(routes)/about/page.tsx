@@ -27,7 +27,7 @@ const points = [
 const AboutPage = () => {
   return (
     <div className=" min-h-screen w-full bg-[url('/images/about-holder.avif')] gap-y-6 bg-cover bg-center p-6 backdrop-blur-md">
-      <BrandHeader title="ABOUT AFRICOM, WHAT ARE WE, WHY CHOOSE US" />
+      <BrandHeader title="ABOUT AFRICOM" />
       <div className=" flex justify-center w-full p-4">
         <ul className=" flex flex-col gap-y-6 font-semibold text-2xl">
           {points.map((point) => (

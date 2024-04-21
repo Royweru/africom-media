@@ -38,7 +38,7 @@ export const navigation = [
     path: "/contact",
   },
 ];
-const brandingItems = [
+ export const brandingItems = [
   {
     id: 1,
     label: "aframebanner",
