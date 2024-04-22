@@ -6,13 +6,39 @@ import { Button } from "./ui/button";
 
 export const CTA = () => {
   const [state, setState] = useState(false);
-  const{onOpen} = useModalStore()
+  const { onOpen } = useModalStore();
 
   // Replace javascript:void(0) path with your path
-  const navigation = [
-    { title: "Partners", path: "javascript:void(0)" },
-    { title: "Customers", path: "javascript:void(0)" },
-    { title: "Team", path: "javascript:void(0)" },
+
+  const partners = [
+    {
+      label: "Cocacola",
+      img: "/images/partners/cocacola.png",
+    },
+    {
+      label: "Aghakan",
+      img: "/images/partners/aghakan.jpeg",
+    },
+    {
+      label: "Dura coat",
+      img: "/images/partners/duracoat.jpeg",
+    },
+    {
+      label: "Huawei",
+      img: "/images/partners/huawei.jpeg",
+    },
+    {
+      label: "Jumia",
+      img: "/images/partners/jumia.jpeg",
+    },
+    {
+      label: "Mtiba",
+      img: "/images/partners/mtiba.jpeg",
+    },
+    {
+      label: "Safaricom",
+      img: "/images/partners/safcom.jpeg",
+    },
   ];
 
   return (
@@ -27,14 +53,19 @@ export const CTA = () => {
               We help startups to grow and make money
             </h2>
             <p className=" text-xl font-semibold text-zinc-300 ">
-            &#34;Branding is simply a more efficient way to make sales&#34; <br />
+              &#34;Branding is simply a more efficient way to make sales&#34;{" "}
+              <br />
               <span className=" text-xs font-bold font-mono text-zinc-200 italic ml-4">
                 Al Ries
               </span>
             </p>
             <div className="items-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
-              <Button onClick={onOpen} variant="secondary" className=" bg-gradient-to-br 
-               from-sky-300 via-blue-500 to-cyan-800 " >
+              <Button
+                onClick={onOpen}
+                variant="secondary"
+                className=" bg-gradient-to-br 
+               from-sky-300 via-blue-500 to-cyan-800 "
+              >
                 Get started
               </Button>
             </div>
@@ -52,14 +83,19 @@ export const CTA = () => {
             Trusted by the best companies
           </p>
           <div className="flex justify-center items-center flex-wrap gap-x-12 gap-y-6 mt-6">
-            <div className=" w-[150px] h-[100px] rounded relative">
-              <Image
-                src={"/images/partners/safcom.jpeg"}
-                alt=""
-                className=" bg-center bg-cover rounded-2xl"
-                fill
-              />
-            </div>
+            {partners.map((partner) => (
+              <div
+                className=" w-[100px] h-[50px] rounded relative"
+                key={partner.label}
+              >
+                <Image
+                  src={partner.img}
+                  alt=""
+                  className=" bg-center bg-cover rounded-2xl"
+                  fill
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
