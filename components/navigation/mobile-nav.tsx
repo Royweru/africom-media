@@ -16,6 +16,7 @@ import { brandingItems } from "./nav-hero";
 import { Menu } from "lucide-react";
 import { Button } from "../ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
+import { ScrollArea } from "../ui/scroll-area";
 
 export const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -56,7 +57,8 @@ export const MobileNav = () => {
               </div>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
-              <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+              <ScrollArea>
+              <ul className="grid h-[400px] w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                 {brandingItems.map((brand) => (
                   <a href={brand.path} key={brand.id}>
                     <DropdownMenuItem className=" text-white font-semibold font-serif text-2xl">
@@ -65,6 +67,8 @@ export const MobileNav = () => {
                   </a>
                 ))}
               </ul>
+              </ScrollArea>
+            
             </DropdownMenuContent>
           </DropdownMenu>
           {navigation.map((nav) => (
