@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import { ContactForm } from './contact-form'
+
 import {FaFacebook, FaInstagram, FaLinkedin, FaTwitter} from "react-icons/fa"
 
 export const Footer= () => {
