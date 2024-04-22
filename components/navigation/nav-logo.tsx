@@ -5,7 +5,7 @@ import React from 'react'
 
 export const NavLogo = () => {
   return (
-    <div className=' relative w-[100px] h-[60px] rounded-md'>
+    <div className=' relative w-[200px] h-[60px] rounded-md'>
         <Image
           src={"/images/logo.png"}
           alt=''
