@@ -6,11 +6,11 @@ export const ContactDetails = () => {
     const contactDetails=[
         {
             label:"Email",
-            detail:"email@gmail.com"
+            detail:"info@africomea.com"
         },
         {
             label:"Phone",
-            detail:"email@gmail.com"
+            detail:"+254 725 783 480"
         },
      
     ]

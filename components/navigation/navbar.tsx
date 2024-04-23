@@ -112,7 +112,7 @@ export const Navbar = () => {
       <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
           <a href="javascript:void(0)">
-            <img src="/images/logo.png" width={120} height={50} alt="" />
+            <img src="/images/logo.png" width={150} height={50} alt="" />
           </a>
           <div className="md:hidden">
             <button
@@ -171,7 +171,7 @@ export const Navbar = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent>
               <ScrollArea className=" h-[400px]">
-                  <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-sky-400">
+                  <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-sky-400 rounded-2xl">
                
                     {brandingItems.map((brand) => (
                       <a href={brand.path} key={brand.id}>
