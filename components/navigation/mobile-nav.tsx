@@ -35,7 +35,7 @@ export const MobileNav = () => {
         </Button>
       </SheetTrigger>
       <SheetContent className=" bg-zinc-900">
-        <div className=" w-full p-4 h-[450px] flex flex-col gap-y-3 bg-transparent md:hidden">
+        <div className=" w-full p-4 h-[450px] flex flex-col gap-y-3 bg-blue-300 md:hidden">
         <a href="/">
           <div className=" text-xl  w-full  flex items-center justify-center font-bold cursor-pointer text-red-600 p-1 italic">
             HOME
@@ -45,7 +45,7 @@ export const MobileNav = () => {
             <DropdownMenuTrigger>
               <div
                 className="
-     text-white 
+      text-yellow-50 
     font-semibold
      font-serif
       cursor-pointer
@@ -58,7 +58,7 @@ export const MobileNav = () => {
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <ScrollArea>
-              <ul className="grid bg-slate-500 h-[400px] w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+              <ul className="grid h-[400px] w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                 {brandingItems.map((brand) => (
                   <a href={brand.path} key={brand.id}>
                     <DropdownMenuItem className=" text-white font-semibold font-serif text-2xl">
