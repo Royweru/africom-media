@@ -58,7 +58,7 @@ export const MobileNav = () => {
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <ScrollArea>
-              <ul className="grid h-[400px] w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+              <ul className="grid bg-slate-500 h-[400px] w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                 {brandingItems.map((brand) => (
                   <a href={brand.path} key={brand.id}>
                     <DropdownMenuItem className=" text-white font-semibold font-serif text-2xl">
