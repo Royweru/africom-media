@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Noto_Sans,BioRhyme } from "next/font/google";
+import {BioRhyme } from "next/font/google";
 import "./globals.css";
-import NavHero from "@/components/navigation/nav-hero";
+
 import { ThemeProvider } from "@/components/theme-provider"
 import { Footer } from "@/components/footer/footer";
 import { ModalProvider } from "@/components/providers/modal-provider";
+import { Navbar } from "@/components/navigation/navbar";
 
 const font = BioRhyme({ subsets: ["latin"] });
 
@@ -29,7 +30,7 @@ export default function RootLayout({
           
           >
              <ModalProvider />
-             <NavHero />
+            <Navbar />
             {children}
             <Footer />
           </ThemeProvider>
