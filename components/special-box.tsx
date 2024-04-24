@@ -9,7 +9,7 @@ export const SpecialBox:React.FC<SpecialBoxProps> = ({
 }) => {
 
   return (
-    <div className=' rounded-md p-4 flex justify-center items-center relative h-[400px]'>
+    <div className=' rounded-md md:p-4 p-0 flex justify-center items-center relative h-[400px]'>
        <Image 
          src={imgSrc||"/images/s1.jpeg"}
          alt=''
