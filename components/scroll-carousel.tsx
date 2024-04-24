@@ -13,7 +13,7 @@ const ScrollCarousel = () => {
     return null;
   }
   return (
-    <div className="bg-neutral-800">
+    <div className="bg-neutral-800 hidden md:block">
       <div className="flex h-4 items-center justify-center">
         <span className="font-semibold font-mono text-xl uppercase text-neutral-500">
           Scroll down
