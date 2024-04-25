@@ -70,11 +70,11 @@ export const productsDetails:{id:number,name:string,description:string,images:st
       name:"ottoman",
      description:"Perfect device for any retail environment or office reception area. Used forbrand activations & promotions. Thedigitally printed covers are removable and washable.",
      images:[
-      "/images/ottoman/1.jpg",
-      "/images/ottoman/2.jpg",
-      "/images/ottoman/3.jpg",
-      "/images/ottoman/4.png",
-      "/images/ottoman/5.png",
+      "/images/OTTOMAN/1.jpg",
+      "/images/OTTOMAN/2.jpg",
+      "/images/OTTOMAN/3.jpg",
+      "/images/OTTOMAN/4.png",
+      "/images/OTTOMAN/5.png",
      ]
     },
     {
@@ -92,12 +92,12 @@ export const productsDetails:{id:number,name:string,description:string,images:st
       name:"parasol",
      description:"Made of corrosion-resistant construction of composite components, aluminium pole and ribs with stainless steel pulley system",
      images:[
-      "/images/parasol/1.jpg",
-      "/images/parasol/2.jpg",
-      "/images/parasol/3.jpg",
-      "/images/parasol/4.jpg",
-      "/images/parasol/5.jpg",
-      "/images/parasol/6.jpg",
+      "/images/PARASOL/1.jpg",
+      "/images/PARASOL/2.jpg",
+      "/images/PARASOL/3.jpg",
+      "/images/PARASOL/4.jpg",
+      "/images/PARASOL/5.jpg",
+      "/images/PARASOL/6.jpg",
      ]
     },
     {
@@ -142,6 +142,17 @@ export const productsDetails:{id:number,name:string,description:string,images:st
      images:[
       "/images/windcheaterbanner/1.jpg",
       "/images/windcheaterbanner/2.jpg"
+     ]
+    }, {
+      id:14,
+      name:"gazebo",
+     description:"Fibre glass pole, steel ground spike andcarry bag. Optional indoor base. Singl or double-sided print. Light weight and easy to store",
+     images:[
+      "/images/GAZEBO/1.jpg",
+      "/images/GAZEBO/2.jpg",  
+      "/images/GAZEBO/3.jpg",
+      "/images/GAZEBO/4.jpg",
+      "/images/GAZEBO/5.jpg"
      ]
     },
   ]
