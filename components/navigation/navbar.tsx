@@ -65,7 +65,7 @@ export const brandingItems = [
   {
     id: 7,
     label: "ottoman",
-    path: "/products-category/branding/ottoman",
+    path: "/products-category/branding/OTTOMAN",
   },
   {
     id: 8,
@@ -75,7 +75,7 @@ export const brandingItems = [
   {
     id: 9,
     label: "Parasol",
-    path: "/products-category/branding/parasol",
+    path: "/products-category/branding/PARASOL",
   },
   {
     id: 10,
@@ -96,6 +96,10 @@ export const brandingItems = [
     id: 13,
     label: "Wind cheater banner",
     path: "/products-category/branding/windcheaterbanner",
+  }, {
+    id: 13,
+    label: "Gazebo",
+    path: "/products-category/branding/GAZEBO",
   },
 ];
 
