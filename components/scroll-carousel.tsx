@@ -77,7 +77,7 @@ export default ScrollCarousel;
 
 const cards = [
   {
-    url: "images/gazebo/4.jpg",
+    url: "images/GAZEBO/4.jpg",
     title: "GAZEBO",
     id: 1,
   },
@@ -102,7 +102,7 @@ const cards = [
     id: 5,
   },
   {
-    url: "/images/ottoman/3.jpg",
+    url: "/images/OTTOMAN/3.jpg",
     title: "OTTOMAN",
     id: 6,
   },
@@ -112,7 +112,7 @@ const cards = [
     id: 7,
   },
   {
-    url: "/images/parasol/2.jpg",
+    url: "/images/PARASOL/2.jpg",
     title: "PARASOL",
     id: 8,
   },

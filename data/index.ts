@@ -67,7 +67,7 @@ export const productsDetails:{id:number,name:string,description:string,images:st
     },
     {
       id:7,
-      name:"ottoman",
+      name:"OTTOMAN",
      description:"Perfect device for any retail environment or office reception area. Used forbrand activations & promotions. Thedigitally printed covers are removable and washable.",
      images:[
       "/images/OTTOMAN/1.jpg",
@@ -89,7 +89,7 @@ export const productsDetails:{id:number,name:string,description:string,images:st
     },
     {
       id:9,
-      name:"parasol",
+      name:"PARASOL",
      description:"Made of corrosion-resistant construction of composite components, aluminium pole and ribs with stainless steel pulley system",
      images:[
       "/images/PARASOL/1.jpg",
@@ -145,7 +145,7 @@ export const productsDetails:{id:number,name:string,description:string,images:st
      ]
     }, {
       id:14,
-      name:"gazebo",
+      name:"GAZEBO",
      description:"Fibre glass pole, steel ground spike andcarry bag. Optional indoor base. Singl or double-sided print. Light weight and easy to store",
      images:[
       "/images/GAZEBO/1.jpg",
