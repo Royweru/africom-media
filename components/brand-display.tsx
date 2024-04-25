@@ -8,7 +8,7 @@ export const BrandDisplay = ({
 }:BrandDisplayProps) => {
     const imagesCount=[1,2,3]
   return (
-    <div className=' w-full py-12 px-4  flex flex-wrap gap-4'>
+    <div className=' w-full py-12 md:px-4 p-0  flex flex-wrap gap-4'>
         {imagesCount.map((no:number)=>(
               <div className=' w-[250px] h-[400px] relative' key={no}>
                   <Image
