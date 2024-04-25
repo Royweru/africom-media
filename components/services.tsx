@@ -50,7 +50,7 @@ export const Services = () => {
       <h1 className=" text-3xl font-bold italic text-cyan-700 text-center">
         {heading}
       </h1>
-      <div className=" w-full py-3 grid md:grid-cols-3  xl:grid-cols-3 px-12 gap-4">
+      <div className=" w-full py-3 grid md:grid-cols-3  xl:grid-cols-3 px-0  md:px-12 gap-4">
         {servicesDescription.map((service) => (
           <div className=" flex flex-col gap-y-2 " key={service.title}>
             <SpecialBox imgSrc={service.img} />
