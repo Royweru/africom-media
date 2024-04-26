@@ -26,7 +26,7 @@ export const Footer= () => {
   ]
 
   return (
-      <footer className=" text-pink-200 bg-[url('/images/bgfooter.jpg')] bg-cover
+      <footer className=" text-pink-200  bg-white bg-cover
      bg-center px-4 py-5 max-w-screen-xl mx-auto md:px-8 rounded-t-md border-t-[1.5px] m-1 border-neutral-500">
           <div className="max-w-lg sm:mx-auto sm:text-center">
               <img src="/images/logo.png" className="w-32 sm:mx-auto" />

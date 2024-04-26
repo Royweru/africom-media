@@ -2,6 +2,13 @@
   @tailwind components;
   @tailwind utilities;
 
+  body{
+    background-image:url('/images/bgcontact.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
   @layer base {
     :root {
       --background: 0 0% 100%;
