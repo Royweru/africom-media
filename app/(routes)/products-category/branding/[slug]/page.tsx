@@ -15,7 +15,7 @@ const BrandPage = ({params}:{
      <BrandHeader title={params.slug}/>
      <div className=' w-full grid md:grid-cols-2 p-12 md:p-4 gap-4 '>
            <ProductDescription content={productDetail} />
-           <BrandDisplay src={params.slug} />
+           <BrandDisplay src={productDetail?.images} />
      </div>
     </div>
   )
