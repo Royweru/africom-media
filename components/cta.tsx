@@ -46,13 +46,13 @@ export const CTA = () => {
       <section className="py-28">
         <div className="max-w-screen-xl mx-auto text-gray-600 gap-x-12 items-center justify-between overflow-hidden md:flex md:px-8">
           <div className="flex-none space-y-5 px-4 sm:max-w-lg md:px-0 lg:max-w-xl">
-            <h1 className="text-sm text-indigo-600 font-medium">
+            <h1 className="text-sm  text-black font-medium">
               Over 200 successful deals
             </h1>
-            <h2 className="text-4xl text-white font-extrabold md:text-5xl">
+            <h2 className="text-4xl  text-white font-extrabold md:text-5xl">
               We help startups to grow and make money
             </h2>
-            <p className=" text-xl font-semibold text-zinc-300 ">
+            <p className=" text-xl font-semibold  text-neutral-500 ">
               &#34;Branding is simply a more efficient way to make sales&#34;{" "}
               <br />
               <span className=" text-xs font-bold font-mono text-zinc-200 italic ml-4">
@@ -79,7 +79,7 @@ export const CTA = () => {
           </div>
         </div>
         <div className="mt-14 px-4 md:px-8">
-          <p className="text-center text-sm  text-sky-200 font-semibold">
+          <p className="text-center text-sm  text-pink-500 font-semibold">
             Trusted by the best companies
           </p>
           <div className="flex justify-center items-center flex-wrap gap-x-12 gap-y-6 mt-6">

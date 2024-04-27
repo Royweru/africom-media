@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { Footer } from "@/components/footer/footer";
 import { ModalProvider } from "@/components/providers/modal-provider";
 import { Navbar } from "@/components/navigation/navbar";
+import { cn } from "@/lib/utils";
 
 const font = BioRhyme({ subsets: ["latin"] });
 
@@ -21,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={font.className}>
+      <body className={cn(font.className,"bg-gradient-to-bl from-pink-400 via-white to-blue-400")}>
        
         <ThemeProvider
             attribute="class"

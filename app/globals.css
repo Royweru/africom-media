@@ -3,7 +3,7 @@
   @tailwind utilities;
 
   body{
-    background-image:url('/images/bgcontact.jpg');
+   
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
