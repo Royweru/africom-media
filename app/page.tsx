@@ -1,6 +1,5 @@
 
 import { CTA } from "@/components/cta";
-import ScrollCarousel from "@/components/scroll-carousel";
 import { Services } from "@/components/services";
 import { SwipeCarousel } from "@/components/swipe-carousel";
 import VideoHero from "@/components/video-hero";

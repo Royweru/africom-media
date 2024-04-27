@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(font.className,"bg-gradient-to-bl from-pink-400 via-white to-blue-400")}>
+      <body className={cn(font.className,)}>
        
         <ThemeProvider
             attribute="class"
