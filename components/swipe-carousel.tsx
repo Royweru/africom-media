@@ -9,8 +9,8 @@ const imgs = [
   "/images/beanbag/1.jpg",
   "/images/corporateflag/2.jpg",
   "/images/doorframebanners/2.jpg",
-  "/images/gazebo/1.jpg",
-  "/images/parasol/1.jpg",
+  "/images/fencewrap/1.jpg",
+  "/images/gazebo/3.jpg",
 ];
 
 const ONE_SECOND = 1000;
