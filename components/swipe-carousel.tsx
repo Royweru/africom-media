@@ -5,12 +5,12 @@ import { motion, useMotionValue } from "framer-motion";
 
 const imgs = [
   "/images/aframebanner/1.jpg",
-  "/images/brandedchairs/2.jpg",
-  "/images/beanbag/1.jpg",
-  "/images/corporateflag/2.jpg",
-  "/images/doorframebanners/2.jpg",
-  "/images/fencewrap/1.jpg",
-  "/images/gazebo/3.jpg",
+  "/images/aframebanner/2.jpg",
+  "/images/beanbag/3.jpg",
+  "/images/nature/4.jpg",
+  "/images/nature/5.jpg",
+  "/images/nature/6.jpg",
+  "/images/nature/7.jpg",
 ];
 
 const ONE_SECOND = 1000;
@@ -84,7 +84,7 @@ export const SwipeCarousel = () => {
 };
 
 const Images = ({ imgIndex }:{
-    imgIndex:any
+  imgIndex:any
 }) => {
   return (
     <>
@@ -110,7 +110,7 @@ const Images = ({ imgIndex }:{
 };
 
 const Dots = ({ imgIndex, setImgIndex }:{
-    imgIndex:number, setImgIndex:React.Dispatch<React.SetStateAction<number>>
+  imgIndex:number,setImgIndex: React.Dispatch<React.SetStateAction<number>>
 }) => {
   return (
     <div className="mt-4 flex w-full justify-center gap-2">
