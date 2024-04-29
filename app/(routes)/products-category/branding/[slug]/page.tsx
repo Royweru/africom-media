@@ -1,4 +1,4 @@
-import { BrandHeader } from '@/components/ui/brand-header'
+import { BrandHeader } from '@/components/providers/ui/brand-header'
 import React from 'react'
 import { ProductDescription } from '@/components/product-description'
 import { BrandDisplay } from '@/components/brand-display'

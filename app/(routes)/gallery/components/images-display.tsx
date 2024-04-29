@@ -1,5 +1,5 @@
 import React from 'react'
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
+import { ScrollArea, ScrollBar } from "@/components/providers/ui/scroll-area"
 import Image from 'next/image'
 interface ImagesDisplayProps{
     images:string[]

@@ -2,7 +2,7 @@
 import { useModalStore } from "@/hooks/modal-store";
 import Image from "next/image";
 import { useState } from "react";
-import { Button } from "./ui/button";
+import { Button } from "./providers/ui/button";
 
 export const CTA = () => {
   const [state, setState] = useState(false);

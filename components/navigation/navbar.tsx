@@ -7,9 +7,9 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "@/components/providers/ui/dropdown-menu";
 import { ArrowBigDown, ArrowDown } from "lucide-react";
-import { ScrollArea, ScrollBar } from "../ui/scroll-area";
+import { ScrollArea, ScrollBar } from "../providers/ui/scroll-area";
 
 export const navigation = [
   {

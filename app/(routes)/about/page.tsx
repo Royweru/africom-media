@@ -1,5 +1,5 @@
 import { Pointer } from "@/components/pointer";
-import { BrandHeader } from "@/components/ui/brand-header";
+import { BrandHeader } from "@/components/providers/ui/brand-header";
 import React from "react";
 
 const points = [

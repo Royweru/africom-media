@@ -3,8 +3,8 @@
 import { useModalStore } from "@/hooks/modal-store";
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "../ui/dialog";
-import { Button } from "../ui/button";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "../providers/ui/dialog";
+import { Button } from "../providers/ui/button";
 import { cn } from "@/lib/utils";
 
 export const EmailModal = () => {
