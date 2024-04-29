@@ -6,7 +6,7 @@ interface ImagesDisplayProps{
 }
 export const ImagesDisplay = ({images}:ImagesDisplayProps) => {
   return (
-    <ScrollArea className=' w-full h-full whitespace-nowrap rounded-md border'>
+    <ScrollArea className=' w-full h-full whitespace-nowrap '>
      <div className=' w-full h-full px-9 flex gap-2 '>
         {images?.map(image=>(
             <div key={image} className=' w-[300px] h-[350px] relative'>
@@ -14,7 +14,7 @@ export const ImagesDisplay = ({images}:ImagesDisplayProps) => {
               fill
               src={image||""}
               alt=''
-              className=' rounded-lg bg-cover bg-center'
+              className='  bg-cover bg-center'
               />
             </div>
         ))}
