@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import {BioRhyme } from "next/font/google";
+import {Poppins } from "next/font/google";
 import "./globals.css";
 
 import { ThemeProvider } from "@/components/theme-provider"
@@ -8,7 +8,7 @@ import { ModalProvider } from "@/components/providers/modal-provider";
 import { Navbar } from "@/components/navigation/navbar";
 import { cn } from "@/lib/utils";
 
-const font = BioRhyme({ subsets: ["latin"] });
+const font = Poppins({ subsets: ["latin"],weight:"600" });
 
 export const metadata: Metadata = {
   title: "Africom Media Ltd",
