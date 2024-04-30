@@ -12,6 +12,7 @@ import { ArrowBigDown, ArrowDown, Dot } from "lucide-react";
 import { ScrollArea, ScrollBar } from "../providers/ui/scroll-area";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { useModalStore } from "@/hooks/modal-store";
 
 export const navigation = [
   {
@@ -116,6 +117,7 @@ export const Navbar = () => {
   const [state, setState] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
   const pathName = usePathname();
+  const {onOpen} = useModalStore()
 
   useEffect(() => {
     setIsMounted(true);
@@ -230,6 +232,14 @@ export const Navbar = () => {
               );
             })}
           </ul>
+        </div>
+        <div className="  flex justify-between items-center">
+          <button className="  px-3 py-2  bg-gradient-to-br from-pink-400
+           via-sky-300 to-white text-2xl font-semibold text-center rounded-md cursor-pointer hover:opacity-85"
+           onClick={onOpen}
+           >
+              Talk to us
+          </button>
         </div>
       </div>
     </nav>
