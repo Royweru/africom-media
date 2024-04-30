@@ -55,7 +55,7 @@ const ServicesPage = () => {
     <div className=' w-full h-full p-5 flex flex-col gap-y-4'>
         <div className=' font-semibold text-4xl flex 
         justify-center items-center text-neutral-800 font-serif   
-        tracking-wide  bg-gradient-to-tl from-blue-300 via-slate-50 to-sky-300 '>
+        tracking-wide  bg-gradient-to-tl from-blue-300 via-slate-50 to-sky-300 rounded-md p-5'>
             SERVICES WE OFFER
         </div>
         <hr />
