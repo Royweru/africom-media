@@ -1,11 +1,12 @@
 import { Pointer } from "@/components/pointer";
 import { BrandHeader } from "@/components/providers/ui/brand-header";
+import VideoHero from "@/components/video-hero";
 import React from "react";
 
 const points = [
   {
     id: 1,
-    description: " AN ESTABLISHED NAME IN EVENT BRANDING PRINT & MANUFACTURE",
+    description: "AN ESTABLISHED NAME IN EVENT BRANDING PRINT & MANUFACTURE",
   },
   {
     id: 2,
@@ -24,14 +25,21 @@ const points = [
     description: "FORWARD THINKING AND PROGRESSIVE",
   },
 ];
+
 const AboutPage = () => {
   return (
-    <div className=" min-h-screen w-full bg-[url('/images/about-holder.avif')] gap-y-6 bg-cover bg-center p-6 backdrop-blur-md">
-      <BrandHeader title="ABOUT AFRICOM" />
-      <div className=" flex justify-center w-full p-4">
-        <ul className=" flex flex-col gap-y-6 font-semibold text-2xl">
+    <div className="min-h-screen w-full bg-pink-500 text-white">
+      {/* Video Header */}
+      <VideoHero header="About Africom" />
+
+      {/* Main Content */}
+      <div className="container mx-auto py-12 px-4">
+        <h2 className="text-4xl font-bold mb-8">Our Values</h2>
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {points.map((point) => (
-            <Pointer key={point.id} content={point.description} />
+            <li key={point.id}>
+              <Pointer content={point.description} />
+            </li>
           ))}
         </ul>
       </div>

@@ -15,6 +15,12 @@ export const MarqueeText = ({
       <div className="sliding-text ">
         {txt1}
       </div>
+      <div className="sliding-text font-light">
+        {txt2}
+      </div>
+      <div className="sliding-text font-extralight">
+        {txt3}
+      </div>
     </div>
   )
 }

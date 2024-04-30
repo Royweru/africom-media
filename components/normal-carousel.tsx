@@ -56,13 +56,13 @@ export function SlidingCarousel() {
          <div className="absolute top-0 left-0 w-full text-center">
           <FadingText />
         </div>
-        <CarouselContent className=" flex h-full  p-3">
+        <CarouselContent className=" flex h-full  p-5">
           {ContentCarousel.map((content) => (
             <CarouselItem
               key={content.id}
               className=" flex-shrink-0 w-full rounded-xl"
             >
-              <div className="w-full h-[450px] relative">
+              <div className="w-full h-[400px] relative">
                 <Image
                   fill
                   src={content.imageUrl}

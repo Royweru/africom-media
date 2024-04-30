@@ -4,6 +4,7 @@ import { ProductDescription } from '@/components/product-description'
 import { BrandDisplay } from '@/components/brand-display'
 
 import { productsDetails } from '@/data'
+import VideoHero from '@/components/video-hero'
 const BrandPage = ({params}:{
   params:{slug:string}
 }) => {
@@ -12,7 +13,7 @@ const BrandPage = ({params}:{
 
   return (
     <div className=' w-full  min-h-screen font-bold flex flex-col gap-y-3'>
-     <BrandHeader title={params.slug}/>
+      <VideoHero header='' />
      <div className=' w-full grid md:grid-cols-2 p-12 md:p-4 gap-4 '>
            <ProductDescription content={productDetail} />
            <BrandDisplay src={productDetail?.images} />

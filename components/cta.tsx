@@ -8,7 +8,7 @@ export const CTA = () => {
   const [state, setState] = useState(false);
   const { onOpen } = useModalStore();
 
-  // Replace javascript:void(0) path with your path
+
 
   const partners = [
     {
@@ -55,7 +55,7 @@ export const CTA = () => {
             <p className=" text-xl font-semibold  text-neutral-500 ">
               &#34;Branding is simply a more efficient way to make sales&#34;{" "}
               <br />
-              <span className=" text-xs font-bold font-mono text-zinc-200 italic ml-4">
+              <span className=" text-xs font-bold font-mono text-black italic ml-4">
                 Al Ries
               </span>
             </p>
