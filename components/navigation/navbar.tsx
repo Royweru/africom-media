@@ -29,6 +29,12 @@ export const navigation = [
     label: "CONTACT",
     path: "/contact",
   },
+  {
+    id: 6,
+    label: "PRODUCTS",
+    path: "/contact",
+  },
+
 ];
 
 export const brandingItems = [
