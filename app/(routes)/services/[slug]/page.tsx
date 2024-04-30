@@ -1,6 +1,7 @@
 import React from 'react'
 import { ServiceDetails } from '@/data/service-details'
 import { ServiceGallery } from './components/service-gallery'
+import { ServiceDesc } from './components/service-desc'
 
 const IndividualService = ({params}:{
     params:{slug:string}
@@ -14,8 +15,10 @@ const IndividualService = ({params}:{
             {service?.name}
          </h1>
          <hr /> 
+         <ServiceDesc content={service?.description} />
          </div>
-<ServiceGallery imgs={service?.images}/>
+        
+       <ServiceGallery imgs={service?.images}/>
     </div>
   )
 }
