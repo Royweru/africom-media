@@ -4,7 +4,7 @@ import { GalleryArt } from "./components/gallery-art";
 
 const GalleryPage = () => {
   return (
-    <div className=" w-full min-h-screen p-0 md:p-6 flex flex-col gap-y-3">
+    <div className=" w-full min-h-screen p-0 md:p-6 flex flex-col gap-y-3 bg-slate-100">
       <div className="relative h-[300px] w-full p-2">
         <video
           className="absolute top-0 left-0 z-0 object-cover w-full h-full opacity-70 rounded-xl"

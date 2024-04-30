@@ -7,8 +7,10 @@ export const ServiceDesc = ({
     content
 }:ServiceDescProps) => {
   return (
-    <div className=' w-full font-semibold italic text-xl text-neutral-600/65  tracking-wide'>
-        {content}
+    <div className=' w-full font-semibold  text-md text-blue-900 tracking-wide'>
+       <blockquote>
+       {content}
+        </blockquote> 
     </div>
   )
 }

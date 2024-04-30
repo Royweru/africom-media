@@ -27,7 +27,10 @@ export const SpecialBox: React.FC<SpecialBoxProps> = ({
         className=" bg-center bg-cover bg-no-repeat rounded-xl group-hover:scale-105"
         fill
       />
-      <div className=" absolute font-semibold tracking-wide text-2xl text-sky-300 bg-transparent flex w-full bottom-2 justify-center text-center">
+      <div className=" absolute font-semibold
+       tracking-wide text-2xl text-sky-300 
+       bg-transparent  w-full bottom-2 
+       justify-center text-center backdrop-blur hidden group-hover:flex">
         {label}
       </div>
       <div className=" absolute hidden bg-transparent  group-hover:flex w-full left-0 justify-center text-center">

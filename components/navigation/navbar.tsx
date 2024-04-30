@@ -8,8 +8,10 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/providers/ui/dropdown-menu";
-import { ArrowBigDown, ArrowDown } from "lucide-react";
+import { ArrowBigDown, ArrowDown, Dot } from "lucide-react";
 import { ScrollArea, ScrollBar } from "../providers/ui/scroll-area";
+import { usePathname } from "next/navigation";
+import { cn } from "@/lib/utils";
 
 export const navigation = [
   {
@@ -102,7 +104,8 @@ export const brandingItems = [
     id: 13,
     label: "Wind cheater banner",
     path: "/products-category/branding/windcheaterbanner",
-  }, {
+  },
+  {
     id: 13,
     label: "Gazebo",
     path: "/products-category/branding/GAZEBO",
@@ -112,11 +115,14 @@ export const brandingItems = [
 export const Navbar = () => {
   const [state, setState] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
+  const pathName = usePathname();
 
   useEffect(() => {
     setIsMounted(true);
   }, []);
+
   if (!isMounted) return null;
+
   return (
     <nav className="bg-transparent w-full border-b md:border-0 md:static stick mb-2">
       <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
@@ -168,21 +174,32 @@ export const Navbar = () => {
         >
           <ul className="justify-center items-center space-y-8 md:flex md:space-x-6 md:space-y-0">
             <a href="/">
-            <li className="text-red-500 hover:text-indigo-600 font-bold cursor-pointer">
-              HOME
-            </li>
+              <li
+                className="text-red-500 hover:text-indigo-600 
+            font-bold cursor-pointer md:flex justify-center items-center"
+              >
+                HOME
+              </li>
             </a>
-           
+
             <DropdownMenu>
               <DropdownMenuTrigger>
-                <li className="text-white hover:text-indigo-600 font-semibold cursor-pointer">
+                <li
+                  className={cn(
+                    " text-indigo-900 hover:text-white font-semibold cursor-pointer text-xl ",
+                    pathName === "/branding" && " text-white text-md"
+                  )}
+                >
                   BRANDING
                 </li>
               </DropdownMenuTrigger>
               <DropdownMenuContent>
-              <ScrollArea className=" h-[400px]">
-                  <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-sky-400 rounded-2xl">
-               
+                <ScrollArea className=" h-[400px]">
+                  <ul
+                    className="grid w-[400px] gap-3 p-4
+                   md:w-[500px] md:grid-cols-2 lg:w-[600px]
+                   bg-sky-400 rounded-2xl"
+                  >
                     {brandingItems.map((brand) => (
                       <a href={brand.path} key={brand.id}>
                         <DropdownMenuItem className=" text-white font-semibold font-serif text-2xl">
@@ -199,8 +216,15 @@ export const Navbar = () => {
               return (
                 <li
                   key={idx}
-                  className="text-white hover:text-indigo-600 font-semibold"
+                  className={cn(
+                    "text-indigo-900 hover:text-white text-xl font-semibold md:flex justify-center items-center",
+                    pathName === item.path && " text-white text-md"
+                  )}
                 >
+                  {pathName === item.path && (
+                    <Dot className=" w-5 h-5 text-blue-300" />
+                  )}
+
                   <a href={item.path}>{item.label}</a>
                 </li>
               );
