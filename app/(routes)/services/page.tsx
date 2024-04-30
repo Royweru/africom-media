@@ -6,10 +6,11 @@ const ServicesPage = () => {
     <div className=" w-full h-full p-5 flex flex-col gap-y-4">
       <div
         className=" font-semibold text-4xl flex 
-        justify-center items-center text-neutral-800 font-serif   
-        tracking-wide  bg-gradient-to-tl from-blue-300 via-slate-50 to-sky-300 rounded-md p-5"
+        justify-center items-center
+        text-white font-serif  tracking-wide 
+         bg-[url('/images/hero-bg.jpeg')] bg-center bg-cover rounded-md"
       >
-        SERVICES WE OFFER
+        Services we offer
       </div>
       <hr />
       <div className=" font-bold grid w-full gap-4 md:grid-cols-3 sm:grid-cols-2 ">
