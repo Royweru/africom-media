@@ -13,7 +13,7 @@ const BrandPage = ({params}:{
 
   return (
     <div className=' w-full  min-h-screen font-bold flex flex-col gap-y-3'>
-      <VideoHero header='' />
+      <VideoHero header={params.slug.toUpperCase()} />
      <div className=' w-full grid md:grid-cols-2 p-12 md:p-4 gap-4 '>
            <ProductDescription content={productDetail} />
            <BrandDisplay src={productDetail?.images} />
