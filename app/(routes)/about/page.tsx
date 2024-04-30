@@ -28,7 +28,7 @@ const points = [
 
 const AboutPage = () => {
   return (
-    <div className="min-h-screen w-full bg-pink-500 text-white">
+    <div className="min-h-screen w-full bg-pink-300 text-white">
       {/* Video Header */}
       <VideoHero header="About Africom" />
 

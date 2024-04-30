@@ -35,7 +35,7 @@ export const EmailModal = () => {
           process.env.NEXT_PUBLIC_EMAILJS_USER_ID as string
         );
         setIsSuccess(
-          `Your messsage has been successfully submitted, thanks for the outreach ${name},we will be in touch`
+          `Your messsage has been successfully submitted, thanks for the outreach ${name.toUpperCase()},we will be in touch`
         );
        setName("")
         setEmail("");
@@ -112,7 +112,7 @@ export const EmailModal = () => {
               </div>
             )}
             {isSuccess&&(
-              <div className=" w-full p-6 font-semibold font-serif bg-emerald-600 text-center text-xl">
+              <div className=" w-full p-6 font-semibold tracking-wide font-serif bg-emerald-600 text-center text-xl">
                  {isSuccess}
               </div>
             )}
