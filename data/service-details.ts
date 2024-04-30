@@ -14,7 +14,7 @@ export const ServiceDetails=[
            ]
     },
     {
-        label:"Litho&DisplayPrint",
+        label:"LithoDisplayPrint",
         description:"Your destination for lithographic and display printing solutions that combine the precision of litho printing with the visual impact of display graphics. We specialize in delivering high-quality, attention-grabbing prints that make a lasting impression, whether you're communicating with clients or showcasing products. Our Litho & Display Print Services: Lithographic Printing, Large Format Display Printing, Retail Display Solutions, POP (Point of Purchase) Displays, High-Quality Graphics, Prototyping.Includes; Books, Business Cards, Calenders, Stationary, Flyers, Posters, Folders, Training Manuals Etc.",
         images:[
             "/images/all/3.jpg","/images/all/2.jpg","/images/all/42.jpg","/images/all/1.jpg","/images/all/m3.jpg"
