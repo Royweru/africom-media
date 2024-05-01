@@ -1,5 +1,6 @@
 import { GallleryHeader } from '@/app/(routes)/gallery/components/gallery-header'
 import { MessageCircleIcon, PhoneCallIcon } from 'lucide-react'
+import { EmailIcon } from './ui/email-icon'
 import React from 'react'
 
 export const ContactDetails = () => {
@@ -30,7 +31,7 @@ export const ContactDetails = () => {
           {contactDetails.map(contact=>(
             <div key={contact.label}>
               <div className=' flex w-full justify-evenly items-center text-neutral-100'>
-                 {contact.label==="Email"&&(<MessageCircleIcon className=' w-5 h-5'/>)}
+                 {contact.label==="Email"&&(<EmailIcon/>)}
                  {contact.label==="Phone"&&(<PhoneCallIcon className=' w-5 h-5'/>)}
                  {contact.detail}
               </div>
