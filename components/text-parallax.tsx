@@ -8,11 +8,11 @@ import { useRouter } from "next/navigation";
 export const TextParallaxContentSection = () => {
   
   return (
-    <div className="  bg-white w-full mt-1">
+    <div className="  bg-white w-full mt-1 px-4">
       <TextParallaxContent
         imgUrl="/images/all/mockup5.jpg"
         subheading="Printing"
-        heading="Fabric printing and large format priniting"
+        heading="Fabric printing and large format printing"
       >
         <ExampleContent />
       </TextParallaxContent>

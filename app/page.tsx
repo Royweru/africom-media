@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col gap-y-2 items-center justify-between p-0">
         <SlidingCarousel />
-        <MarqueeText txt1="Awsome services offered by Africom EA"/>
+        <MarqueeText txt1="Awesome services offered by Africom EA"/>
         <TextParallaxContentSection />
         <CTA />
     </main>

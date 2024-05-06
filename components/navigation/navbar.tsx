@@ -17,25 +17,25 @@ import { useModalStore } from "@/hooks/modal-store";
 export const navigation = [
   {
     id: 4,
-    label: "GALLERY",
+    label: "Gallery",
     path: "/gallery",
   },
 
   {
     id: 2,
-    label: "ABOUT",
+    label: "About",
     path: "/about",
   },
 
   {
     id: 6,
-    label: "CONTACT",
+    label: "Contact",
     path: "/contact",
   },
 
   {
     id: 7,
-    label: "SERVICES",
+    label: "Services",
     path: "/services",
   },
 ];
@@ -180,7 +180,7 @@ export const Navbar = () => {
                 className="text-red-500 hover:text-indigo-600 
             font-bold cursor-pointer md:flex justify-center items-center"
               >
-                HOME
+                Home
               </li>
             </a>
 
@@ -188,11 +188,11 @@ export const Navbar = () => {
               <DropdownMenuTrigger>
                 <li
                   className={cn(
-                    " text-indigo-900 hover:text-white font-semibold cursor-pointer text-xl ",
-                    pathName === "/branding" && " text-white text-md"
+                    " text-indigo-900 hover:text-white font-semibold cursor-pointer text-xl text-md ",
+                    pathName === "/branding" && " text-white "
                   )}
                 >
-                  BRANDING
+                  Branding
                 </li>
               </DropdownMenuTrigger>
               <DropdownMenuContent>
@@ -219,7 +219,7 @@ export const Navbar = () => {
                 <li
                   key={idx}
                   className={cn(
-                    "text-indigo-900 hover:text-white text-xl font-semibold md:flex justify-center items-center",
+                    "text-indigo-900 hover:text-white text-md font-semibold md:flex justify-center items-center",
                     pathName === item.path && " text-white text-md"
                   )}
                 >
