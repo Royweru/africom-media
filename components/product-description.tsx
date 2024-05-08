@@ -4,8 +4,8 @@ interface ProductDescriptionProps {
 }
 export const ProductDescription = ({ content }: ProductDescriptionProps) => {
   return (
-    <div className=" w-full font-bold tracking-wide text-black h-full justify-center py-12 md:px-12 px-0">
-      <blockquote className=" text-2xl italic font-serif">
+    <div className=" w-full font-semibold tracking-wide text-black h-full justify-center py-12 md:px-12 px-0 justify-self-center">
+      <blockquote className=" text-xl  font-mono  tracking-wide">
         {content.description}
       </blockquote>
     </div>

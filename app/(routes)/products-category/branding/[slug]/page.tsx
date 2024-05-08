@@ -12,7 +12,7 @@ const BrandPage = ({params}:{
   const productDetail = productsDetails.find((product)=>product.name===params.slug)
 
   return (
-    <div className=' w-full  min-h-screen font-bold flex flex-col gap-y-3'>
+    <div className=' w-full  min-h-screen font-bold flex flex-col gap-y-3 bg-sky-100'>
       <VideoHero header={params.slug.toUpperCase()} />
      <div className=' w-full grid md:grid-cols-2 p-12 md:p-4 gap-4 '>
            <ProductDescription content={productDetail} />
