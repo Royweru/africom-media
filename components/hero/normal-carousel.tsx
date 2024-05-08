@@ -47,7 +47,7 @@ export function SlidingCarousel() {
   );
 
   return (
-    <div className="w-full mb-2 h-full py-4 relative bg-white">
+    <div className="w-full mb-2 h-full py-4 md:p-0 relative bg-white">
       <Carousel
         plugins={[plugin.current]}
         className="relative w-full h-full"
@@ -56,13 +56,13 @@ export function SlidingCarousel() {
          <div className="absolute top-0 left-0 w-full text-center">
           <FadingText />
         </div>
-        <CarouselContent className=" flex h-full  p-5">
+        <CarouselContent className=" flex h-full md:p-2">
           {ContentCarousel.map((content) => (
             <CarouselItem
               key={content.id}
-              className=" flex-shrink-0 w-full rounded-xl"
+              className=" flex-shrink-0 w-full "
             >
-              <div className="w-full h-[400px] relative">
+              <div className="w-full md:h-[400px] h-[300px] relative">
                 <Image
                   fill
                   src={content.imageUrl}

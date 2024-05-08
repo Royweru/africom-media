@@ -1,6 +1,6 @@
 
 import { CTA } from "@/components/cta";
-import { SlidingCarousel } from "@/components/normal-carousel";
+import { SlidingCarousel } from "@/components/hero/normal-carousel";
 import { TextParallaxContentSection } from "@/components/text-parallax";
 import { MarqueeText } from "@/components/ui/marquee-text";
 
